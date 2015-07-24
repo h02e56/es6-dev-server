@@ -1,0 +1,16 @@
+@import "base";
+
+*{
+  list-style-type: none;
+}
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: $base-font-size;
+  padding: $base-padding;
+}
+
+ul{
+  padding: $base-padding;
+}
+

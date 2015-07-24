@@ -1,0 +1,16 @@
+/* line 3, ../sass/main.scss */
+* {
+  list-style-type: none;
+}
+
+/* line 7, ../sass/main.scss */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1.3em;
+  padding: 5px 8px;
+}
+
+/* line 13, ../sass/main.scss */
+ul {
+  padding: 5px 8px;
+}

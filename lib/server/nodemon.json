@@ -1,0 +1,10 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "./.git",
+    "./static",
+    "./*.js"
+  ],
+  "ext": "js json",
+  "verbose":"true"
+}

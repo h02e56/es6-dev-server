@@ -1,0 +1,11 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "test/**/*",
+    "lib/client/**/*.*.*",
+    "lib/server/static/**/*.*"
+  ],
+  "ext": "js json",
+  "verbose":"false"
+}
