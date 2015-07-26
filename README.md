@@ -1,26 +1,19 @@
-react-es6
+es6-dev-server
 =============
 
-Development setup for react and ES6  
+Development setup
 
 [![build status](https://travis-ci.org/h02e56/react-es6.svg?branch=master)](http://travis-ci.org/h02e56/es6-react)
 
 ## Introduction
 
-* As static server use to [substack](https://github.com/substack/substack-flavored-webapp)  
-* As a module loader [browserify](http://browserify.org/)  
-* As a JS compiler [Babel](https://babeljs.io/)
-* For reload [nodemon](http://nodemon.io)  
-* For reload [watchify](https://github.com/substack/watchify)  
-* For client live reload [browserSync](http://www.browsersync.io)  
-* Use Sass with [Compass](http://compass-style.org/)
-* Use tape [Tape](https://github.com/substack/tape)
+* As static server use to [substack](https://github.com/substack/substack-flavored-webapp), Bundling [browserify](http://browserify.org/), As a JS compiler [Babel](https://babeljs.io/), For reload [nodemon](http://nodemon.io), For reload [watchify](https://github.com/substack/watchify), For client live reload [browserSync](http://www.browsersync.io), Use Sass with [Compass](http://compass-style.org/)
 
 ## Instalation
 
 ```sh
-$ git clone https://github.com/h02e56/react-es6.git
-$ cd react-es6
+$ git clone https://github.com/h02e56/es6-dev-server.git
+$ cd es6-dev-server
 $ npm install
 ```
 
