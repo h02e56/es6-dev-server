@@ -9,10 +9,8 @@
     "watch-js": "watchify ./lib/client/app.js -o ./lib/server/static/js/build.js -d",
     "watch-css": "compass watch",
     "browserify-test": "browserify test/client/test.js > test/client/test.browser.js",
-    "babel-test": "babel ./test/server/test.js > ./test/server/serveres5.js",
-    "babel": "babel --sourceMaps=both  ./index.js > ./indexes5.js",
-    "test-client": "npm run browserify-test && faucet ./test/client/test.browser.js",
-    "test-server": "npm run babel-test && faucet ./test/server/serveres5.js ",
+    "test-client": "babel-node test/client/test.js | faucet",
+    "test-server": "babel-node ./test/server/test.js | faucet ./test/server/serveres5.js ",
     "test": "standard lib && npm run test-server "
   },
   "author": "h02e56",
@@ -27,13 +25,14 @@
       "reactify"
     ]
   },
-  "engine": {
-    "node": "^2.3.0"
-  },
   "standard": {
     "parser": "babel-eslint"
   },
    "dependencies": {
+    "babel": "^5.6.23",
+    "babel-eslint": "^3.1.23",
+    "babelify": "^6.1.2",
+    "browser-sync": "^2.7.13",
     "JSONStream": "0.10.0",
     "handlebars-stream": "^1.4.0",
     "react": "^0.13.3",
@@ -44,10 +43,6 @@
     "highland": "2.5.1"
   },
   "devDependencies": {
-    "babel": "^5.6.23",
-    "babel-eslint": "^3.1.23",
-    "babelify": "^6.1.2",
-    "browser-sync": "^2.7.13",
     "browserify": "^10.2.4",
     "debug": "^2.2.0",
     "faucet": "0.0.1",
